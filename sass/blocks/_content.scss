@@ -1,0 +1,161 @@
+
+
+
+
+.content { 
+    background: url(../img/content-img.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    
+
+    @media (max-width: 670px) {
+        height: 90vh;
+    }
+     
+
+    @media (max-width: 580px) {
+        height: 83vh;
+    }
+
+    @media (max-width: 400px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 370px) {
+        height: 85vh;
+    }
+}
+
+
+
+.content__row { 
+    padding-top: 121px;
+    align-items: center;
+    text-align: center; 
+
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: 670px) {
+        padding-top: 23px;
+    }
+   
+}
+
+.content__text { 
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #BBBBBB; 
+
+        @media (max-width: 670px) {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        
+    }
+
+    
+}
+
+.content__title {     
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        span {
+            color: #3E9CDC;
+        }
+
+        @media (max-width: 670px) {
+            font-size: 31px;
+        }
+        
+}
+
+.content__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 77px;
+
+    @media (max-width: 830px) {
+        margin-top: 48px;
+    }
+
+    @media (max-width: 670px) {
+        justify-content: space-around;
+    }
+    
+    @media (max-width: 370px) {
+        margin-top: 23px;  
+    }
+    
+
+    p {
+        font-family: 'Lato', sans-serif;
+        margin-top: 20px;
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+
+        @media (max-width: 995px) {
+            font-size: 14px;
+        }  
+
+        @media (max-width: 670px) {
+            display: none;
+        }  
+
+
+    }
+    
+    li:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        margin-left: 118px;
+        margin-top: 45px;
+        width: 110px;
+        height: 6px;
+        background-image: url(../img/dot.svg);
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+
+
+    img {
+        @media (max-width: 1200px) {
+            height: 80px;  
+        }
+
+        @media (max-width: 670px) {
+            height: 60px;
+        }
+
+        @media (max-width: 370px) {
+            height: 48px;  
+        }
+    }    
+}
+
+
+

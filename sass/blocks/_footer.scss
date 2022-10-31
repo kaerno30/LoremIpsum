@@ -1,0 +1,142 @@
+.footer {
+    background: #3D4050;
+}
+
+.footer__wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+    @media (max-width: 768px) {
+            height: 90px;
+           -ms-flex-direction: column;
+            flex-direction: column;
+    }
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+
+        @media (max-width: 1160px) {
+            font-size: 9px;
+        }
+
+        @media (max-width: 768px) {
+            padding-bottom: 15px;
+            
+            &:first-child {
+                -webkit-box-ordinal-group: 2;
+                    -ms-flex-order: 1;
+                        order: 1;
+              }
+     }
+
+        
+        
+    }
+
+    p::after {
+        content: "\007C";
+        padding-left: 45px;
+
+        @media (max-width: 1200px) {
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    span{
+        text-transform: uppercase;
+    }   
+}
+
+
+.footer__buy {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C3C3C3;
+
+    @media (max-width: 1160px) {
+        font-size: 9px;
+    }
+    
+    @media (max-width: 768px) {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 370px) {
+        font-size: 10px;
+    }
+    
+    a {
+        padding: 0 30px 0 30px;
+
+        @media (max-width: 1200px) {
+            padding: 0 0 0 7px;
+        }
+
+       
+    }
+
+    span {
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: #3E9CDC;
+    }
+}
+
+.footer__soc {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+    @media (max-width: 1160px) {
+        font-size: 9px;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 370px) {
+        font-size: 10px;
+    }
+        
+    a:hover {
+        color: #3E9CDC;
+    }
+
+    a:not(:last-child) {
+        margin-right: 38px;
+    }
+
+    a:not(:last-child)::before {
+        
+        content: "|";
+        padding-right: 38px;
+        color: #FFFFFF;;
+
+        @media (max-width: 1200px) {
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+

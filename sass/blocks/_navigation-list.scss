@@ -1,0 +1,33 @@
+.navigation-list {
+    ul {
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    li:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: .2s ease;
+
+        &.active, &:hover{
+            color: #43ABF0;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+        
+    }
+
+}

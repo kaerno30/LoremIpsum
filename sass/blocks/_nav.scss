@@ -1,0 +1,24 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 34px;
+    padding-bottom: 32px;
+    background: rgba(16, 16, 29, 0.9);
+
+    @media (max-width: 830px) {
+        width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+        padding-top: 13px;
+        padding-bottom: 11px;
+    }
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
